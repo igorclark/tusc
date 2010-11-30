@@ -10,8 +10,6 @@
 	 */
 	class TwitterOAuthUtility extends TwitterOAuth {
 
-		protected $buffer;
-
 		/*
 		 * Allow overriding API host URL.
 		 * This is actually the URL root - e.g.
