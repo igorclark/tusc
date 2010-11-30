@@ -38,7 +38,7 @@ require_once("phirehose" . DIRECTORY_SEPARATOR . "lib" . DIRECTORY_SEPARATOR . "
 /*
  * Extend Phirehose client methods with OAuth/chunked-encoding versions
  */
-tusc_lib_require("UserstreamPhirehose.class.php");
+tusc_lib_require("phirehose" . DIRECTORY_SEPARATOR . "UserstreamPhirehose.class.php");
 
 /*
  * Make sure all OAuth keyss are defined.
