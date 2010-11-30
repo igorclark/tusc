@@ -1,0 +1,3 @@
+Twitter's User Stream API uses OAuth authentication. twitteroauth (http://github.com/abraham/twitteroauth) does OAuth, but doesn't do streaming API; phirehose (http://code.google.com/p/phirehose/) eats streaming APIs, but doesn't do OAuth, and uses Twitter API's "delimited=length" parameter rather than plain chunk-encoding.
+
+So this uses OAuth to generate a signed OAuth request uRL for the User Stream API, and re-works the Phirehose connect() and consume() methods to eat OAuth-secured chunk-encoded user streams. It also provides a hook to add custom status-queueing classes.
