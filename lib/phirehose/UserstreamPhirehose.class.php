@@ -223,10 +223,6 @@
 				$url = $this->oauth_url;
 				$urlParts = parse_url($url);
 
-                // parse out OAuth headers
-                $oauthParts = explode("&", $urlParts['query']);
-				$oauthAuthorizationString = implode(", ", $oauthParts);
-
 				// Debugging is useful
 				$this->log('Connecting to twitter stream: ...');
 				
