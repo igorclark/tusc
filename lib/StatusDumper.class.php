@@ -5,6 +5,12 @@
 	 * Example status-queuing class prints
 	 * stringified JSON read from the wire
 	 * straight to stdout.
+	 *
+	 * Don't do any processing here in a real app -
+	 * this class should just hand status messages
+	 * over to another process. See
+	 * http://dev.twitter.com/pages/streaming_api_concepts#collecting-processing
+	 * for more details.
 	 */
 	class StatusDumper implements StatusQueuer {
 		private static $instance;
